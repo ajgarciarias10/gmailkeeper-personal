@@ -1,0 +1,2 @@
+# Solo para autorizar la cuenta; el mantenimiento usa la biblioteca estándar.
+google-auth-oauthlib>=1.2,<2
