@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GmailKeeper · Tres reglas. Un Gmail en orden.</title>
+  <meta name="description" content="Etiqueta el correo por marca y archívalo automáticamente. Un proyecto abierto con configuración personal y guías para Linux, macOS y Windows.">
+  <meta name="theme-color" content="#133c35">
+  <meta property="og:title" content="GmailKeeper · Tres reglas. Un Gmail en orden.">
+  <meta property="og:description" content="Del problema cotidiano al proyecto abierto: identifica, etiqueta y archiva. Descubre cómo adaptarlo a tu correo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ajgarciarias10.github.io/gmailkeeper-personal/">
+  <link rel="canonical" href="https://ajgarciarias10.github.io/gmailkeeper-personal/">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header wrap">
+    <a class="wordmark" href="./" aria-label="GmailKeeper, inicio"><span class="mark" aria-hidden="true">gk.</span> GmailKeeper</a>
+    <nav aria-label="Navegación principal"><a href="#como-funciona">Cómo funciona</a><a href="#empieza">Empieza</a><a class="nav-repo" href="https://github.com/ajgarciarias10/gmailkeeper-personal">GitHub ↗</a></nav>
+  </header>
+  <main id="contenido">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Proyecto abierto · En desarrollo</p>
+        <h1>Tres reglas.<br>Un Gmail<br><em>en orden.</em></h1>
+        <p class="lead">Identifica quién te escribe, añade su etiqueta y archiva el mensaje. Una rutina menos para ti; un lugar para cada correo.</p>
+        <div class="actions"><a class="button primary" href="#empieza">Quiero configurarlo <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/ajgarciarias10/gmailkeeper-personal">Ver el código →</a></div>
+        <p class="hero-note">Para probar y adaptar con conocimientos técnicos.</p>
+      </div>
+      <div class="mail-window" aria-label="Ejemplo ficticio de organización del correo">
+        <div class="window-top"><span class="window-dots" aria-hidden="true">● ● ●</span><span>Tu correo, organizado</span><span class="status">Ejemplo</span></div>
+        <div class="mail-body">
+          <div class="inbox-title"><span>Recibidos</span><span class="count">3</span></div>
+          <div class="mail"><span class="avatar blue">A</span><div><strong>Marca Azul</strong><p>Las novedades de esta semana</p></div><span class="unread" aria-label="No leído"></span></div>
+          <div class="mail"><span class="avatar peach">N</span><div><strong>Nube Ejemplo</strong><p>Tu factura está disponible</p></div><span class="unread" aria-label="No leído"></span></div>
+          <div class="mail"><span class="avatar purple">A</span><div><strong>Ana · ejemplo ficticio</strong><p>¿Nos vemos el viernes?</p></div></div>
+          <div class="flow-arrow" aria-hidden="true">↓ <span>Identificar · etiquetar · archivar</span></div>
+          <div class="folder"><span aria-hidden="true">↳</span><div><small>Archivo / Promociones</small><strong>Marca Azul</strong></div><span class="pill">1 mensaje</span></div>
+          <div class="folder"><span aria-hidden="true">↳</span><div><small>Archivo / Actualizaciones</small><strong>Nube Ejemplo</strong></div><span class="pill">1 mensaje</span></div>
+          <div class="folder"><span aria-hidden="true">↳</span><div><small>Archivo / Personal</small><strong>Pendiente de marca</strong></div><span class="pill">1 mensaje</span></div>
+        </div>
+        <div class="window-bottom"><span aria-hidden="true">✓</span> Conserva las etiquetas y el estado de lectura.</div>
+      </div>
+    </section>
+
+    <section class="rules section wrap" id="como-funciona">
+      <div class="section-heading"><p class="eyebrow">La idea</p><h2>Lo que pedimos al correo,<br>en tres pasos.</h2></div>
+      <div class="three-grid">
+        <article class="rule"><span class="number">01</span><h3>Identificar</h3><p>Agrupa los remitentes de una marca por dominio o por tus reglas personales. Aprende nombres cuando el remitente y el dominio coinciden.</p></article>
+        <article class="rule"><span class="number">02</span><h3>Etiquetar</h3><p>Crea subetiquetas de marca dentro de cada categoría. Añade las que faltan y conserva las que ya tenías.</p></article>
+        <article class="rule"><span class="number">03</span><h3>Archivar</h3><p>Retira el mensaje de Recibidos. Sigue disponible en Gmail, con el mismo estado de lectura. Si la marca no se reconoce, queda pendiente.</p></article>
+      </div>
+    </section>
+
+    <section class="demo-section section" id="pruebalo">
+      <div class="wrap demo-grid">
+        <div><p class="eyebrow">Pruébalo aquí</p><h2>Tu correo.<br>Tus reglas.</h2><p>Elige un caso y mira cómo cambia la organización. Esta simulación utiliza mensajes ficticios y funciona en tu navegador.</p><label class="select-label" for="policy">¿Qué quieres archivar?</label><select id="policy"><option value="all">Todo el correo recibido</option><option value="promotions">Solo promociones</option><option value="exclude">Todo, excepto un remitente</option></select><button class="button primary" id="simulate" type="button">Simular organización <span aria-hidden="true">→</span></button><p class="fine">No conecta con Gmail ni solicita credenciales.</p></div>
+        <div class="demo-panel"><div class="demo-panel-title"><strong>Resultado de la simulación</strong><span class="status">Datos ficticios</span></div><div id="demo-result" aria-live="polite" aria-atomic="true"><p class="empty">Elige un caso y pulsa «Simular organización».</p></div><noscript><p>La simulación necesita JavaScript. Puedes consultar todos los casos en las guías de GitHub.</p></noscript></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="empieza">
+      <div class="section-heading"><p class="eyebrow">De la idea a tu cuenta</p><h2>Una guía para probarlo<br>con tu propio Gmail.</h2><p>El proyecto requiere conocimientos técnicos: Python 3.10 o posterior, Git y tu propio cliente OAuth de Google. La configuración y las credenciales se guardan en tu ordenador.</p></div>
+      <div class="setup-grid">
+        <div class="steps">
+          <article><span class="step-dot">1</span><div><h3>Descarga el proyecto</h3><p>Crea un entorno Python e instala la dependencia de autenticación.</p><a href="https://github.com/ajgarciarias10/gmailkeeper-personal#1-descarga-e-instala">Guía de instalación →</a></div></article>
+          <article><span class="step-dot">2</span><div><h3>Define tus reglas y conecta Gmail</h3><p>Elige el alcance, excluye remitentes si lo necesitas y autoriza tu cuenta con Google.</p><a href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/docs/CONECTAR-GMAIL.md">Conexión paso a paso →</a></div></article>
+          <article><span class="step-dot">3</span><div><h3>Revisa antes de aplicar</h3><p>La vista previa muestra hasta 50 mensajes recientes sin modificar Gmail. Después aplica y comprueba el resultado.</p><a href="https://github.com/ajgarciarias10/gmailkeeper-personal#4-revisa-una-muestra">Vista previa y aplicación →</a></div></article>
+          <article><span class="step-dot">4</span><div><h3>Programa el mantenimiento</h3><p>Continúa el histórico y descubre marcas nuevas con las instrucciones para tu sistema.</p><a href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/docs/AUTOMATIZACION.md">Automatización en los tres sistemas →</a></div></article>
+        </div>
+        <aside class="terminal"><div class="terminal-top"><span aria-hidden="true">● ● ●</span><span>Primeros pasos · Linux / macOS</span></div><pre><code><span class="comment"># Descarga</span>
+git clone https://github.com/ajgarciarias10/gmailkeeper-personal.git
+cd gmailkeeper-personal
+
+<span class="comment"># Entorno e instalación</span>
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+
+<span class="comment"># Configuración de tu cuenta</span>
+python gmailkeeper.py init \
+  --account tu-correo@gmail.com</code></pre><p>En Windows, la guía incluye los comandos de PowerShell y CMD. Configura tus preferencias antes de aplicar cambios.</p></aside>
+      </div>
+      <p class="notice"><strong>Elige bien el alcance.</strong> La configuración predeterminada archiva todo lo recibido, incluidos avisos y facturas. Excluye enviados, borradores, chats, spam y papelera. Si prefieres solo promociones, configura ese caso antes de aplicar.</p>
+    </section>
+
+    <section class="section wrap cases">
+      <div class="section-heading"><p class="eyebrow">Personalización</p><h2>No hay dos buzones iguales.</h2></div>
+      <div class="three-grid"><article class="case-card"><h3>Solo promociones</h3><p>Mantén el resto en Recibidos y organiza únicamente el correo promocional.</p><code>"query": "category:promotions"</code></article><article class="case-card"><h3>Remitentes que importan</h3><p>Deja determinadas personas o dominios fuera del archivo automático.</p><code>"exclude_senders": […]</code></article><article class="case-card"><h3>Nombres que tú eliges</h3><p>Unifica dominios, resuelve pendientes o revisa las marcas antes de aceptarlas.</p><code>"brands": { … }</code></article></div>
+      <a class="text-link" href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/docs/CASOS-PERSONALES.md">Ver todos los casos, incluidas varias cuentas →</a>
+    </section>
+
+    <section class="trust section wrap">
+      <div><p class="eyebrow">Qué conviene saber</p><h2>Un proyecto pequeño.<br>Con sus límites claros.</h2></div>
+      <div class="faq">
+        <details><summary>¿De quién es la idea y qué licencia tiene?</summary><p>Idea original: <a href="https://github.com/ajgarciarias10">ajgarciarias10</a>. El código y la documentación se publican bajo <a href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/LICENSE">licencia MIT</a>: puedes usarlos, modificarlos y compartirlos conservando el aviso de copyright y la licencia.</p></details>
+        <details open><summary>¿Qué datos utiliza?</summary><p>Consulta remitentes y etiquetas. No descarga cuerpos ni adjuntos. Las credenciales, muestras y estado se guardan localmente; el registro público de marcas empieza vacío. Esta página no pide acceso al correo ni utiliza analítica.</p></details>
+        <details><summary>¿Funciona con el ordenador apagado?</summary><p>Los filtros ya creados siguen funcionando dentro de Gmail. Descubrir marcas nuevas, cubrir nuevas combinaciones de categoría y marca o revisar el histórico requiere ejecutar el programa en tu ordenador.</p></details>
+        <details><summary>¿Tiene coste?</summary><p>El proyecto no tiene suscripción ni necesita un servidor contratado o llamadas a IA. El uso de los servicios de Google está sujeto a sus cuotas y condiciones. Consulta los detalles y la fuente oficial en <a href="https://github.com/ajgarciarias10/gmailkeeper-personal#coste-y-privacidad">coste y privacidad</a>.</p></details>
+        <details><summary>¿Puede equivocarse con una marca?</summary><p>Sí. La detección utiliza reglas y coincidencias entre nombres y dominios; no conoce todas las empresas. Puedes corregir nombres con reglas privadas o desactivar el aprendizaje automático. Los remitentes personales quedan pendientes salvo que los configures.</p></details>
+        <details><summary>¿Cómo lo detengo?</summary><p>Desactiva la tarea local y elimina los filtros creados por el perfil con las instrucciones de la guía. Se conservan los mensajes, las etiquetas y los filtros anteriores. El correo archivado no vuelve automáticamente a Recibidos.</p></details>
+      </div>
+    </section>
+
+    <section class="closing wrap"><p class="eyebrow">Un proyecto que necesita comunidad</p><h2>Probemos la idea.<br>Construyamos lo que falta.</h2><p>Hoy es un proyecto abierto en desarrollo. Llegar a un producto accesible requiere apoyo: pruebas en distintos casos, mejoras de código y documentación, y una instalación más sencilla. Puedes compartir problemas y propuestas en GitHub.</p><a class="button light" href="https://github.com/ajgarciarias10/gmailkeeper-personal/issues">Proponer una mejora <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="wrap footer"><a class="wordmark" href="./"><span class="mark" aria-hidden="true">gk.</span> GmailKeeper</a><p>Idea: <a href="https://github.com/ajgarciarias10">ajgarciarias10</a> · <a href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/LICENSE">Licencia MIT</a> · Proyecto independiente de Google.</p><a href="https://github.com/ajgarciarias10/gmailkeeper-personal/blob/main/docs/PROBLEMAS.md">Ayuda y problemas →</a></footer>
+</body>
+</html>

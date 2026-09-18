@@ -2,6 +2,10 @@
 
 Organiza tu Gmail con tres instrucciones:
 
+[Presentación del proyecto y demostración interactiva](https://ajgarciarias10.github.io/gmailkeeper-personal/).
+
+**Estado: proyecto abierto en desarrollo.** Requiere conocimientos técnicos para configurar Python y el acceso a Google. Convertirlo en un producto accesible necesita apoyo de la comunidad: pruebas con distintos casos, mejoras de código y documentación, y una instalación más sencilla.
+
 1. **Identifica quién envía cada mensaje.** Agrupa las direcciones de una marca bajo el mismo nombre.
 2. **Añade su etiqueta si falta.** Crea subetiquetas dentro de la categoría correspondiente y conserva las etiquetas que ya tengas.
 3. **Archiva automáticamente.** Retira el mensaje de Recibidos sin borrarlo ni cambiar si está leído.
@@ -168,4 +172,4 @@ Cada usuario crea su propio cliente OAuth para uso personal. Publicar este códi
 - [Solución de problemas](docs/PROBLEMAS.md): permisos, tokens que caducan, límites, marcas pendientes y temporizadores.
 - [Contribuir y ejecutar pruebas](CONTRIBUTING.md).
 
-Licencia [MIT](LICENSE).
+Idea original: [ajgarciarias10](https://github.com/ajgarciarias10). Código y documentación bajo licencia [MIT](LICENSE); permite usar, modificar y compartir conservando el aviso de copyright y la licencia.
